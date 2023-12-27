@@ -245,9 +245,9 @@ pipeline_service = client.pipeline_service
 stomata_pipeline = Pipeline(client=client, name="stomata-detection")
 
 # input options
-input_option = st.sidebar.radio("Select input type: ", ["image", "video"])
+input_option = st.sidebar.radio("Select input type: ", ["image"])
 
 if input_option == "image":
     image_input()
-else:
-    video_input()
+# else:
+    # video_input()
